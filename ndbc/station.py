@@ -49,8 +49,8 @@ class Station(object):
     def get_stdmet(self, starttime, endtime):
         """Gets the standard meteorological data given start and end times."""
         # re-initialize if we are to overwrite data
-        if self.time != [] and self.time != None :
-            self.__init__(self.id)
+        #if self.time != [] and self.time != None :
+        self.__init__(self.id)
 
         if starttime.year < datetime.utcnow().year:
             datatype = 'historical'
